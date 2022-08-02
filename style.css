@@ -1,6 +1,8 @@
 :root {
     --primary-bg-clr: #F9FAFB;
     --secondary-bg-clr: #FFFFFF;
+    --logo-bg-clr: #000000;
+    --logo-bg-transparency: 50%;
 
     --accent-clr: #596D48;
 

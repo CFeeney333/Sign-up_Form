@@ -1,3 +1,26 @@
+:root {
+    --primary-bg-clr: #F9FAFB;
+    --secondary-bg-clr: #FFFFFF;
+
+    --accent-clr: #596D48;
+
+    --primary-txt-clr: #000000;
+    --secondary-txt-clr: #FFFFFF;
+    --link-txt-clr: var(--accent-clr);
+    --error-txt-clr: #C33C3C;
+
+    --error-clr: var(--error-txt-clr);
+    --highlight-clr: #2050D7;
+
+    --primary-font: "sans-serif";
+    --logo-font: "norseBold";
+
+    --txt-large: 48px;
+    --txt-medium: 24px;
+    --txt-small: 20px;
+    --txt-extra-small: 16px;
+}
+
 @font-face {
     font-family: "norseBold";
     src: url(fonts/Norse-Bold.otf);

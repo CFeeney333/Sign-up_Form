@@ -1,3 +1,18 @@
+:root {
+    --header-font: "NorseFont", Arial, Helvetica, sans-serif;
+    --primary-font: Arial, Helvetica, sans-serif;
+
+    --header-font-size: 5.5em;
+    --primary-font-size: 1em;
+
+    --header-color: white;
+    --primary-color: black;
+    --secondary-color: #43453F;
+
+    --primary-bg-color: #ced3c6;
+    --secondary-bg-color: white;
+}
+
 @font-face {
     font-family: "NorseFont";
     src: url("fonts/Norse-Bold.otf");
@@ -12,7 +27,6 @@
 
 header {
     flex: 2;
-    background-color: blue;
     background-image: url(images/ferns-original.jpg);
     background-position: center;
     background-size: cover;
@@ -29,9 +43,9 @@ header {
 }
 
 h1 {
-    font-family: "NorseFont", Arial, Helvetica, sans-serif;
-    font-size: 5.5em;
-    color: white;
+    font-family: var(--header-font);
+    font-size: var(--header-font-size);
+    color: var(--header-color);
 }
 
 img {
@@ -40,5 +54,5 @@ img {
 
 content {
     flex: 3;
-    background-color: red;
+    background-color: var(--primary-bg-color);
 }

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "NorseFont";
+    src: url("fonts/Norse-Bold.otf");
+}
+
+.container {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+}
+
+header {
+    flex: 2;
+    background-color: blue;
+    background-image: url(images/ferns-original.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.logo-area {
+    background-color: rgba(0, 0, 0, 0.466);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    position: relative;
+    top: 20%;
+}
+
+h1 {
+    font-family: "NorseFont", Arial, Helvetica, sans-serif;
+    font-size: 5.5em;
+    color: white;
+}
+
+img {
+    height: 90%;
+}
+
+content {
+    flex: 3;
+    background-color: red;
+}

@@ -6,13 +6,15 @@
     --primary-font-size: 1.2rem;
     --secondary-font-size: 1rem;
     --label-font-size: .7rem;
-    --input-font-size: var(var(--secondary-font-size));
+    --input-font-size: var(--secondary-font-size);
+    --tiny-font-size: .7rem;
 
     --header-color: white;
     --primary-color: black;
     --secondary-color: white;
     --accent-color: #596D48;
     --shadow-color: rgba(0, 0, 0, 0.274);
+    --warning-color: red;
 
     --shadow-size: 4px;
     --small-shadow-size: 2px;
@@ -134,7 +136,7 @@ input[class="text-input"]:focus-visible {
 
 .unmatched {
     font-size: var(--input-font-size);
-    border: 1px solid red;
+    border: 1px solid var(--warning-color);
     padding: var(--text-input-padding);
     outline: none;
     border-radius: var(--text-input-border-radius);
@@ -166,4 +168,9 @@ input[class="text-input"]:focus-visible {
 a {
     color: var(--accent-color);
     text-decoration: none;
+}
+
+.non-matching {
+    color: var(--warning-color);
+    font-size: var(--tiny-font-size);
 }

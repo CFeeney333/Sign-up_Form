@@ -30,6 +30,8 @@
 
     --padding-left: 2em;
     --vertical-gap: 1.5rem;
+    --text-input-padding: .2rem;
+    --text-input-border-radius: 3px;
 }
 
 @font-face {
@@ -119,15 +121,23 @@ label {
 
 input[class="text-input"] {
     font-size: var(--input-font-size);
-    padding: .2rem;
+    padding: var(--text-input-padding);
     border: 1px solid rgba(0, 0, 0, 0.37);
-    border-radius: 3px;
+    border-radius: var(--text-input-border-radius);
 }
 
 input[class="text-input"]:focus-visible {
     border: 1px solid blue;
     outline: none;
     box-shadow: var(--small-shadow-size) var(--small-shadow-size) var(--small-blur-radius) rgba(0, 0, 0, .2);
+}
+
+.unmatched {
+    font-size: var(--input-font-size);
+    border: 1px solid red;
+    padding: var(--text-input-padding);
+    outline: none;
+    border-radius: var(--text-input-border-radius);
 }
 
 .input-row {
